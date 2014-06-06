@@ -83,6 +83,17 @@ main nav p a.active {
 	border-radius: 3px;
 	color: #fff;
 }
+main .page-nav {
+	text-align: center;
+}
+main .page-nav p a {
+	padding: 5px 7px;
+}
+main .page-nav p a:hover {
+	background: #0095C6;
+	border-radius: 3px;
+	color: #fff;
+}
 .download-btns {
 	text-align: center;
 }
@@ -119,11 +130,14 @@ main nav p a.active {
 	width: 1.3em;
 	vertical-align: -0.25em;
 }
-.book-cover, .author .img-wrap {
+.book-cover, .cover-img .img-wrap, .author .img-wrap {
 	padding: 0 4em;
 }
-.book-cover img, .author img {
-	width: 100%;
+.book .img-wrap {
+	padding: 0 7em;
+}
+.book-cover img, .book img, .cover-img img, .author img {
+	max-width: 100%;
 }
 .book h3, .cover-img h3, .author h3 {
 	border-bottom: 1px #ddd solid;
@@ -137,6 +151,7 @@ main nav p a.active {
 		text-align: center;
 		font-weight: 500;
 		text-shadow: #222 3px 4px 4px;
+		color: #eee;
 		display: block;
 	}
 	main h1, main h2, main h3, main h4, main h5, main h6 {

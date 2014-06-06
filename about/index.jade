@@ -17,22 +17,34 @@ block main
 				|  &nbsp;
 				a(href="../index/") Book Link Index
 	hr
+	section
+		.page-nav
+			p
+				a(href="#about-the-book") About the Book
+				|  &nbsp;
+				a(href="#about-the-cover-image") About the Cover Image
+				|  &nbsp;
+				a(href="#about-the-author") About the Author
 
 	| &nbsp;
 
-	section.book
+	section.book#about-the-book
 		h3 About the Book
+		.img-wrap 
+			img(src="../img/book-front-cover-image-lite.jpg")
 		p This book contains most of the writings of Satoshi Nakamoto, creator of Bitcoin, published in emails and forum posts during the span of a little over two years during which Bitcoin was launched and became established. Anyone interested in learning about Bitcoin and, more specifically, about the thought processes of its creator will appreciate this book. Its content will be an easy read for anyone having a background in computer software. However, economists and investors without a background in information technology may also be interested in Satoshi’s writings, some of which concern economic concepts. Depending on background and interest, certain readers may be interested in only certain chapters. 
 		p To enable readers to derive maximum benefit from Satoshi’s writings, we’ve included a chapter entitled “How And Why Bitcoin Works?” that provides an introduction to the key concepts of Bitcoin and the fundamental principles on which it is based. This should help the reader gain sufficient understanding to comprehend the majority of the chapters which follow. Chapters are presented in chronological order, from the earliest post in which Satoshi presents the germinal idea of Bitcoin to the most recent, which marks his withdrawal from public life.
 		p Part of this book’s content comes from various Internet forums: p2pfoundation.org, bitcointalk.org, and the cryptography mail archive. 
 
-	section.cover-img
+	section.cover-img#about-the-cover-image
 		h3 About the Cover Image
+		.img-wrap 
+			img(src="../img/cover-img-1280-lite-2.jpg")
 		p Credit for the image on the front cover goes to Lisa Weichel (user id lisa_aw on flickr.com). The photo was taken at Cueva de las Manos (Cave of Hands) in the province of Santa Cruz in Argentina. Cueva de las Manos is a series of caves famous for the various paintings of human hands covering its walls. The paintings, the earliest of which date from around 13,000 years and the latest from about 9,000 years ago, were left there by multiple generations. 
 		p I selected it as this book’s cover image because it seems to me to embody many of the concepts underlying Bitcoin—many individuals participating and cooperating to attain, over time, a common goal and yet maintaining their own individuality and uniqueness. Bitcoin differs from the cave paintings of Cueva de las Manos in scale, however. 
 		p Although these paintings were produced by multiple generations of individuals over several thousands of years, the number of these artists can’t compare in size to the millions who now and will in the future use Bitcoin. Moreover, Bitcoin’s users are geographically dispersed, collaborating over a decentralized system. Finally, whereas Cueva de las Manos was the work of one or more distinct tribes of humans, Bitcoin, open to anyone to use and adapt, transcends nationality and has the potential to become a true world currency.
 
-	section.author
+	section.author#about-the-author
 		h3 About the Author
 		.img-wrap 
 			img(src="../img/PhilChampagne-lite.jpg")
