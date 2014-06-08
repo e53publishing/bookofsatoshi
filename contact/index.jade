@@ -1,0 +1,39 @@
+extends ../jade/template
+
+block head
+	+title()
+	+description()
+
+block styles
+	link(rel='stylesheet', type='text/css', href='../css/main.css')
+
+block main
+	section
+		nav
+			p
+				a(href="../") Home
+				|  &nbsp;
+				a(href="../about/") About
+				|  &nbsp;
+				a(href="#").active Contact Us
+				|  &nbsp;
+				a(href="../index/") Book Link Index
+	hr
+
+	section
+		h2.text-center Contact Us
+		a(href='http://www.google.com/recaptcha/mailhide/d?k=019mMQZLTYxZlKZJ-Z_PtBhw==&c=sgCD6qveMoorfQzk1RmHLE5LhKFz-ytszUIAYIYw4M0=').btn.btn-main.liame-itna moc.liamg@<wbr />ihsotasfokoob 
+		|  &nbsp;
+
+
+	| &nbsp;
+
+block scripts-special
+	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+	script
+		window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');
+	script(src='../js/util/normalizeLoader.js')
+	script(src='../js/util/fouc.js')
+
+block scripts
+	//- script(src='../js/main.js')
