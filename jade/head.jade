@@ -13,7 +13,7 @@ mixin description(description)
 	if description
 		meta(name='description', content=description)
 	else
-		if config.description
+		if config.siteDescription
 			meta(name='description', content=config.siteDescription)
 		else
 			meta(name='description', content='A cool site using jade')
