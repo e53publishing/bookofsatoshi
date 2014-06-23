@@ -4,42 +4,36 @@ block head
 	+title()
 	+description()
 
-block styles
-	link(rel='stylesheet', type='text/css', href='../css/main.css')
-
 block main
 	section
 		nav
 			p
-				a(href="../") Home
+				a(href="../").unl.blue Home
 				|  &nbsp;
-				a(href="../about/") About
+				a(href="../about/").unl.blue About
 				|  &nbsp;
-				a(href="#").active Contact Us
+				a(href="#").unl.active Contact Us
 				|  &nbsp;
-				a(href="../index/") Book Link Index
+				a(href="../index/").unl.blue Book Link Index
 	hr
 
-	section
-		h2.text-center Contact Us
-		a.btn.btn-main bookofsatos<wbr />hi@gmail.com
-		|  &nbsp;
+	//- section
+	//- 	h2.text-center Contact Us
+	//- 	a.btn2.btn2-main bookofsatos<wbr />hi@gmail.com
+	//- 	|  &nbsp;
+	section.contact
+		.panel.panel-info
+			.panel-heading
+				.panel-title Contact Us
+			.panel-body
+				.form-horizontal(role='form')
+					.form-group
+						label.col-sm-2.control-label Email
+						.col-sm-10
+							span.form-control#bos-email bookofsatoshi@gmail.com
 
 
 	| &nbsp;
 
-block scripts-special
-	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-	//- script
-	//- 	window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');
-	script(src='//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js')
-	script
-		window.Zepto || document.write('<script src="../bower_components/zepto/zepto.min.js"><\/script>');
-	script(src='../js/util/normalizeLoader.js')
-	block normalizeLoader
-		script
-			normalizeLoader('../');
-	//- script(src='../js/util/fouc.js')
-
 block scripts
-	//- script(src='../js/main.js')
+	script(src='/js/main.js')

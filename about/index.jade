@@ -4,68 +4,71 @@ block head
 	+title()
 	+description()
 
-block styles
-	link(rel='stylesheet', type='text/css', href='../css/main.css')
-
 block main
 	section
 		nav
 			p
-				a(href="../") Home
+				a(href="../").unl.blue Home
 				|  &nbsp;
-				a(href="#").active About
+				a(href="#").unl.active About
 				|  &nbsp;
-				a(href="../contact/") Contact Us
+				a(href="../contact/").unl.blue Contact Us
 				|  &nbsp;
-				a(href="../index/") Book Link Index
+				a(href="../index/").unl.blue Book Link Index
 	hr
 	section
 		.page-nav
 			p
-				a(href="#about-the-book") About the Book
+				a(href="#about-the-book").unl.blue About the Book
 				|  &nbsp;
-				a(href="#about-the-cover-image") About the Cover Image
+				a(href="#about-the-cover-image").unl.blue About the Cover Image
 				|  &nbsp;
-				a(href="#about-the-author") About the Author
+				a(href="#about-the-author").unl.blue About the Author
 
 	| &nbsp;
 
 	section.book#about-the-book
-		h3 About the Book
-		.img-wrap 
-			img(src="../img/book-front-cover-image-lite.jpg")
-		p This book contains most of the writings of Satoshi Nakamoto, creator of Bitcoin, published in emails and forum posts during the span of a little over two years during which Bitcoin was launched and became established. Anyone interested in learning about Bitcoin and, more specifically, about the thought processes of its creator will appreciate this book. Its content will be an easy read for anyone having a background in computer software. However, economists and investors without a background in information technology may also be interested in Satoshi’s writings, some of which concern economic concepts. Depending on background and interest, certain readers may be interested in only certain chapters. 
-		p To enable readers to derive maximum benefit from Satoshi’s writings, we’ve included a chapter entitled “How And Why Bitcoin Works?” that provides an introduction to the key concepts of Bitcoin and the fundamental principles on which it is based. This should help the reader gain sufficient understanding to comprehend the majority of the chapters which follow. Chapters are presented in chronological order, from the earliest post in which Satoshi presents the germinal idea of Bitcoin to the most recent, which marks his withdrawal from public life.
-		p Part of this book’s content comes from various Internet forums: p2pfoundation.org, bitcointalk.org, and the cryptography mail archive. 
+		.container-fluid
+			.row
+				.col-md-8
+					h3 About the Book
+					p This book contains most of the writings of Satoshi Nakamoto, creator of Bitcoin, published in emails and forum posts during the span of a little over two years during which Bitcoin was launched and became established. Anyone interested in learning about Bitcoin and, more specifically, about the thought processes of its creator will appreciate this book. Its content will be an easy read for anyone having a background in computer software. However, economists and investors without a background in information technology may also be interested in Satoshi’s writings, some of which concern economic concepts. Depending on background and interest, certain readers may be interested in only certain chapters. 
+					p To enable readers to derive maximum benefit from Satoshi’s writings, we’ve included a chapter entitled “How And Why Bitcoin Works?” that provides an introduction to the key concepts of Bitcoin and the fundamental principles on which it is based. This should help the reader gain sufficient understanding to comprehend the majority of the chapters which follow. Chapters are presented in chronological order, from the earliest post in which Satoshi presents the germinal idea of Bitcoin to the most recent, which marks his withdrawal from public life.
+					p Part of this book’s content comes from various Internet forums: p2pfoundation.org, bitcointalk.org, and the cryptography mail archive. 
+				.col-md-4
+					h4 &nbsp;
+					.img-wrap 
+						img(src="../img/book-front-cover-image-lite.jpg")
 
 	section.cover-img#about-the-cover-image
-		h3 About the Cover Image
-		.img-wrap 
-			img(src="../img/cover-img-1280-lite-2.jpg")
-		p Credit for the image on the front cover goes to Lisa Weichel (user id lisa_aw on flickr.com). The photo was taken at Cueva de las Manos (Cave of Hands) in the province of Santa Cruz in Argentina. Cueva de las Manos is a series of caves famous for the various paintings of human hands covering its walls. The paintings, the earliest of which date from around 13,000 years and the latest from about 9,000 years ago, were left there by multiple generations. 
-		p I selected it as this book’s cover image because it seems to me to embody many of the concepts underlying Bitcoin—many individuals participating and cooperating to attain, over time, a common goal and yet maintaining their own individuality and uniqueness. Bitcoin differs from the cave paintings of Cueva de las Manos in scale, however. 
-		p Although these paintings were produced by multiple generations of individuals over several thousands of years, the number of these artists can’t compare in size to the millions who now and will in the future use Bitcoin. Moreover, Bitcoin’s users are geographically dispersed, collaborating over a decentralized system. Finally, whereas Cueva de las Manos was the work of one or more distinct tribes of humans, Bitcoin, open to anyone to use and adapt, transcends nationality and has the potential to become a true world currency.
+		.container-fluid
+			.row
+				.col-md-6
+					h3 About the Cover Image
+					
+					p Credit for the image on the front cover goes to Lisa Weichel (user id lisa_aw on flickr.com). The photo was taken at Cueva de las Manos (Cave of Hands) in the province of Santa Cruz in Argentina. Cueva de las Manos is a series of caves famous for the various paintings of human hands covering its walls. The paintings, the earliest of which date from around 13,000 years and the latest from about 9,000 years ago, were left there by multiple generations. 
+					p I selected it as this book’s cover image because it seems to me to embody many of the concepts underlying Bitcoin—many individuals participating and cooperating to attain, over time, a common goal and yet maintaining their own individuality and uniqueness. Bitcoin differs from the cave paintings of Cueva de las Manos in scale, however. 
+					p Although these paintings were produced by multiple generations of individuals over several thousands of years, the number of these artists can’t compare in size to the millions who now and will in the future use Bitcoin. Moreover, Bitcoin’s users are geographically dispersed, collaborating over a decentralized system. Finally, whereas Cueva de las Manos was the work of one or more distinct tribes of humans, Bitcoin, open to anyone to use and adapt, transcends nationality and has the potential to become a true world currency.
+				.col-md-6
+					h4 &nbsp;
+					h4 &nbsp;
+					h4 &nbsp;
+					.img-wrap 
+						img(src="../img/cover-img-1280-lite-2.jpg")
 
 	section.author#about-the-author
-		h3 About the Author
-		.img-wrap 
-			img(src="../img/PhilChampagne-lite.jpg")
-		p Phil Champagne is Managing Director of Wren Investment Group LLC, a firm that invests in real estate with equity funding from financial partners. His knowledge of the Austrian School of Economics enables Wren Investment Group LLC and its partners to navigate investments from a sound money perspective. Phil has a background in computer software with a bachelor's degree in electrical engineering from the Université de Sherbrooke in Canada. He became interested in Bitcoin in 2012. 
+		.container-fluid
+			.row
+				.col-md-7
+					h3 About the Author
+					p Phil Champagne is Managing Director of Wren Investment Group LLC, a firm that invests in real estate with equity funding from financial partners. His knowledge of the Austrian School of Economics enables Wren Investment Group LLC and its partners to navigate investments from a sound money perspective. Phil has a background in computer software with a bachelor's degree in electrical engineering from the Université de Sherbrooke in Canada. He became interested in Bitcoin in 2012. 
+				.col-md-5
+					h4 &nbsp;
+					h4 &nbsp;
+					.img-wrap 
+						img(src="../img/PhilChampagne-lite.jpg")
 
 	| &nbsp;
-
-block scripts-special
-	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-	//- script
-	//- 	window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');
-	script(src='//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js')
-	script
-		window.Zepto || document.write('<script src="../bower_components/zepto/zepto.min.js"><\/script>');
-	script(src='../js/util/normalizeLoader.js')
-	block normalizeLoader
-		script
-			normalizeLoader('../');
-	//- script(src='../js/util/fouc.js')
 
 block scripts
 	//- script(src='../js/main.js')
