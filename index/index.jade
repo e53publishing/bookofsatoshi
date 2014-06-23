@@ -4,117 +4,103 @@ block head
 	+title()
 	+description()
 
-block styles
-	link(rel='stylesheet', type='text/css', href='../css/main.css')
-
 block main
+
 	section
 		nav
 			p
-				a(href="../") Home
+				a(href="../").unl.blue Home
 				|  &nbsp;
-				a(href="../about/") About
+				a(href="../about/").unl.blue About
 				|  &nbsp;
-				a(href="../contact/") Contact Us
+				a(href="../contact/").unl.blue Contact Us
 				|  &nbsp;
-				a(href="#").active Book Link Index
+				a(href="#").unl.active Book Link Index
 	hr
 
-	section.chapter-1
-		h2 Chapter 1
-		ul
-			li 
-				a(href="http://www.zorinaq.com/pub/bitcoin-0.1.0.rar") http://www.zorinaq.com/pub/bitcoin-0.1.0.rar
-			li 
-				a(href="http://www.zorinaq.com/pub/bitcoin-0.1.0.tgz") http://www.zorinaq.com/pub/bitcoin-0.1.0.tgz
-			li 
-				a(href="http://we.lovebitco.in/bitcoin-0.1.0.rar") http://we.lovebitco.in/bitcoin-0.1.0.rar
-			li 
-				a(href="http://www.bitcointrading.com/files/bitcoin-0.1.0.rar") http://www.bitcointrading.com/files/bitcoin-0.1.0.rar
+	.bookindex
+		section.chapter-1
+			h2 Chapter 1
+			ul
+				li 
+					a(href="http://www.zorinaq.com/pub/bitcoin-0.1.0.rar") http://www.zorinaq.com/pub/bitcoin-0.1.0.rar
+				li 
+					a(href="http://www.zorinaq.com/pub/bitcoin-0.1.0.tgz") http://www.zorinaq.com/pub/bitcoin-0.1.0.tgz
+				li 
+					a(href="http://we.lovebitco.in/bitcoin-0.1.0.rar") http://we.lovebitco.in/bitcoin-0.1.0.rar
+				li 
+					a(href="http://www.bitcointrading.com/files/bitcoin-0.1.0.rar") http://www.bitcointrading.com/files/bitcoin-0.1.0.rar
+			| &nbsp;
+		hr
+
+		section.chapter-2
+			h2 Chapter 2
+			ul
+				li 
+					a(href="https://blockchain.info/address/1GaMmGRxKCNuyymancjmAcu3mvUnVjTVmh") https://blockchain.info/address/1GaMmGRxKCNuyymancjmAcu3mvUnVjTVmh
+				li 
+					a(href="http://en.wikipedia.org/wiki/Public-key_cryptography") http://en.wikipedia.org/wiki/Public-key_cryptography
+				li 
+					a(href="http://en.wikipedia.org/wiki/Cryptographic_hash_function") http://en.wikipedia.org/wiki/Cryptographic_hash_function
+				li 
+					a(href="http://bitcoin.org/bitcoin.pdf") http://bitcoin.org/bitcoin.pdf
+				li 
+					a(href="http://bitcoin.org/en/faq") http://bitcoin.org/en/faq
+			| &nbsp;
+		hr
+
+		section.chapter-3-17
+			h2 Chapter 3 to Chapter 17
+			ul
+				li 
+					a(href="http://www.mail-archive.com/search?l=cryptography%40metzdowd.com&q=satoshi+nakamoto") http://www.mail-archive.com/search?l=cryptography%40metzdowd.com&q=satoshi+nakamoto
+			| &nbsp;
+		hr
+
+		section.chapter-19-20
+			h2 Chapter 19 to Chapter 20
+			ul
+				li 
+					a(href="http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html") http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html
+			| &nbsp;
+		hr
+
+		section.chapter-21-23
+			h2 Chapter 21 to Chapter 23
+			ul
+				li 
+					a(href="http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source") http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source
+				li 
+					a(href="http://p2pfoundation.ning.com/profile/SatoshiNakamoto") http://p2pfoundation.ning.com/profile/SatoshiNakamoto
+			| &nbsp;
+		hr
+
+		section.chapter-25
+			h2 Chapter 25
+			ul
+				li 
+					a(href="http://sourceforge.net/p/bitcoin/mailman/message/21646307/") http://sourceforge.net/p/bitcoin/mailman/message/21646307/
+			| &nbsp;
+		hr
+
+		section.chapter-26-68
+			h2 Chapter 26 to Chapter 68
+			ul
+				li 
+					a(href="https://bitcointalk.org/index.php?topic=5") https://bitcointalk.org/index.php?topic=5
+				li 
+					a(href="https://bitcointalk.org/index.php?action=profile;u=3;sa=showPosts") All posts from Satoshi on the bitcointalk.org
+			| &nbsp;
+		hr
+
+		section.chapter-67
+			h2 Chapter 67
+			ul
+				li 
+					a(href="http://www.pcworld.com/article/213230/could_wikileaks_scandal_lead_to_new_virtual_currency.html") Article on PC World
+			| &nbsp;
+
 		| &nbsp;
-	hr
-
-	section.chapter-2
-		h2 Chapter 2
-		ul
-			li 
-				a(href="https://blockchain.info/address/1GaMmGRxKCNuyymancjmAcu3mvUnVjTVmh") https://blockchain.info/address/1GaMmGRxKCNuyymancjmAcu3mvUnVjTVmh
-			li 
-				a(href="http://en.wikipedia.org/wiki/Public-key_cryptography") http://en.wikipedia.org/wiki/Public-key_cryptography
-			li 
-				a(href="http://en.wikipedia.org/wiki/Cryptographic_hash_function") http://en.wikipedia.org/wiki/Cryptographic_hash_function
-			li 
-				a(href="http://bitcoin.org/bitcoin.pdf") http://bitcoin.org/bitcoin.pdf
-			li 
-				a(href="http://bitcoin.org/en/faq") http://bitcoin.org/en/faq
-		| &nbsp;
-	hr
-
-	section.chapter-3-17
-		h2 Chapter 3 to Chapter 17
-		ul
-			li 
-				a(href="http://www.mail-archive.com/search?l=cryptography%40metzdowd.com&q=satoshi+nakamoto") http://www.mail-archive.com/search?l=cryptography%40metzdowd.com&q=satoshi+nakamoto
-		| &nbsp;
-	hr
-
-	section.chapter-19-20
-		h2 Chapter 19 to Chapter 20
-		ul
-			li 
-				a(href="http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html") http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html
-		| &nbsp;
-	hr
-
-	section.chapter-21-23
-		h2 Chapter 21 to Chapter 23
-		ul
-			li 
-				a(href="http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source") http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source
-			li 
-				a(href="http://p2pfoundation.ning.com/profile/SatoshiNakamoto") http://p2pfoundation.ning.com/profile/SatoshiNakamoto
-		| &nbsp;
-	hr
-
-	section.chapter-25
-		h2 Chapter 25
-		ul
-			li 
-				a(href="http://sourceforge.net/p/bitcoin/mailman/message/21646307/") http://sourceforge.net/p/bitcoin/mailman/message/21646307/
-		| &nbsp;
-	hr
-
-	section.chapter-26-68
-		h2 Chapter 26 to Chapter 68
-		ul
-			li 
-				a(href="https://bitcointalk.org/index.php?topic=5") https://bitcointalk.org/index.php?topic=5
-			li 
-				a(href="https://bitcointalk.org/index.php?action=profile;u=3;sa=showPosts") All posts from Satoshi on the bitcointalk.org
-		| &nbsp;
-	hr
-
-	section.chapter-67
-		h2 Chapter 67
-		ul
-			li 
-				a(href="http://www.pcworld.com/article/213230/could_wikileaks_scandal_lead_to_new_virtual_currency.html") Article on PC World
-		| &nbsp;
-
-	| &nbsp;
-
-block scripts-special
-	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-	//- script
-	//- 	window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');
-	script(src='//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js')
-	script
-		window.Zepto || document.write('<script src="../bower_components/zepto/zepto.min.js"><\/script>');
-	script(src='../js/util/normalizeLoader.js')
-	block normalizeLoader
-	script
-		normalizeLoader('../');
-	//- script(src='../js/util/fouc.js')
 
 block scripts
 	//- script(src='../js/main.js')
