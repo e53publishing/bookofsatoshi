@@ -77,6 +77,8 @@ main nav {
 }
 main nav p a {
 	padding: 5px 7px;
+	border: #0095c6 1px solid;
+	border-radius: 3px;
 }
 main nav p a.active {
 	background: #0095C6;
