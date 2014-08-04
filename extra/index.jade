@@ -1,0 +1,34 @@
+extends ../jade/template
+
+block head
+	+title()
+	+description()
+
+block main
+	section
+		nav
+			p
+				a(href="../").unl.blue Home
+				|  &nbsp; 
+				a(href="../about/").unl.blue About
+				|  &nbsp; 
+				a(href="http://bookofsatoshi.blogspot.com/").unl.blue Blog
+				|  &nbsp; 
+				a(href="../contact/").unl.blue Contact Us
+				|  &nbsp; 
+				a(href="../index/").unl.blue Book Link Index
+				|  &nbsp; 
+				a(href="#").unl.active Extra
+	hr
+	h1.text-center Extra
+	section
+		h3 Other Publications By The Author, Phil Champagne
+		ul
+			li
+				a(href="https://philchampagne.github.io/xsidechain/Side_Chain_without_Bitcoin_modification.pdf") A possible side chain without Bitcoin Software modification
+
+	| &nbsp;
+	| &nbsp;
+
+block scripts
+	//- script(src='../js/main.js')
