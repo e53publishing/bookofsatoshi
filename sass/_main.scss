@@ -104,6 +104,12 @@ main .page-nav p a:hover {
 	border-radius: 3px;
 	color: #fff !important;
 }
+
+iframe.trailerVideo {
+	width: 100%;
+	height: 20em;
+}
+
 .strike a, a .strike {
 	text-decoration: line-through;
 	color: #666;
