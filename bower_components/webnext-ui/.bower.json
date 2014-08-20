@@ -1,0 +1,15 @@
+{
+  "name": "webnext-ui",
+  "homepage": "https://github.com/myhonor16/webnext-ui",
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "37e15e9e18c5c6535fbe33e60404bfcdf3684b39"
+  },
+  "_source": "git://github.com/myhonor16/webnext-ui.git",
+  "_target": "~0.1.0",
+  "_originalSource": "webnext-ui",
+  "_direct": true
+}

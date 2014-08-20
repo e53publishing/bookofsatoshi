@@ -1,0 +1,48 @@
+@import "../bower_components/webnext-ui/build/export";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url("../img/bitcoin-code-1280-lite.jpg");
+	background-position: center left;
+	background-size: cover;
+}
+
+.header {
+	color: #fff;
+	min-height: 10em;
+
+	.wrapper {
+		max-width: 60em;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 1.6em 2em;
+		text-shadow: #111 0 0 1em;
+	}
+}
+
+.pitch {
+	background-color: #fff;
+
+	.wrapper {
+		// min-height: 30em;
+		max-width: 60em;
+		margin: 0 auto;
+		padding: 6em 6em 7em;
+	}
+}
+
+.email-list {
+	min-height: 10em;
+
+	.wrapper {
+		max-width: 60em;
+		margin: 0 auto;
+	}
+}

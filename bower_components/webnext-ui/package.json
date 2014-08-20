@@ -1,0 +1,27 @@
+{
+  "name": "WebNext-UI",
+  "version": "0.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myhonor16/webnext-ui.git"
+  },
+  "author": "Samuel Champagne (myhonor16)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myhonor16/webnext-ui/issues"
+  },
+  "homepage": "https://github.com/myhonor16/webnext-ui",
+  "devDependencies": {
+    "gulp": "~3.8.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-ruby-sass": "~0.5.0",
+    "gulp-minify-css": "~0.3.5",
+    "gulp-jshint": "~1.6.3",
+    "jshint-stylish": "~0.2.0",
+    "gulp-csslint": "~0.1.4"
+  }
+}
