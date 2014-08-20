@@ -12,8 +12,7 @@ html(lang='en')
 		link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Libre+Baskerville|Oxygen')
 		link(rel='stylesheet', type='text/css', href='/css/event.css')
 
-		//if lt IE 9
-			script(src='/bower_components/html5shiv/dist/html5shiv-printshiv.min.js')
+		!= '<!--[if lt IE 9]><script src="/bower_components/html5shiv/dist/html5shiv-printshiv.min.js"></script><![endif]-->'
 	body
 		include ../../jade/chromeframe
 
@@ -24,7 +23,8 @@ html(lang='en')
 			section.pitch
 				.wrapper
 					p 
-						strong When: Thursday, August 28nd 2014 at 8 PM EDT
+						strong When: Thursday, August 28nd 2014 at 8 PM 
+							a(href="http://www.timeanddate.com/library/abbreviations/timezones/na/edt.html") EDT (UTC -4)
 
 					p Online event only at this page
 
@@ -35,7 +35,7 @@ html(lang='en')
 					p
 						strong From a personal email exchange between Phil Champagne and Adam Draper: 
 
-					p 
+					p.t-formal.t-font-large 
 						strong "I think it is almost time for this type of tech, so if you have the ability to build it, definitely go for it." 
 
 					p.t-align-right
@@ -51,7 +51,8 @@ html(lang='en')
 			//- 	//- 
 			section.email-list
 				.wrapper
-					//Begin MailChimp Signup Form 
+					// 
+						Begin MailChimp Signup Form 
 					link(href='//cdn-images.mailchimp.com/embedcode/classic-081711.css', rel='stylesheet', type='text/css')
 					style(type='text/css')
 						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -74,7 +75,8 @@ html(lang='en')
 					script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
 					script(type='text/javascript')
 						(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
-					// End mc_embed_signup
+					// 
+						End mc_embed_signup
 
 
 		//- script(src='/bower_components/zepto/zepto.min.js');
