@@ -17,7 +17,7 @@ html(lang='en')
 	body
 		include ../../jade/chromeframe
 
-		main
+		main.t-simple
 			.header.t-formal
 				.wrapper
 					h1.t-align-center A Sidechain implementation without Bitcoin protocol modification
@@ -49,31 +49,32 @@ html(lang='en')
 			//- 	//- 
 			//- section.chat
 			//- 	//- 
-			//- section.email-list
+			section.email-list
 				.wrapper
+					//Begin MailChimp Signup Form 
+					link(href='//cdn-images.mailchimp.com/embedcode/classic-081711.css', rel='stylesheet', type='text/css')
+					style(type='text/css')
+						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 					#mc_embed_signup
-						form#mc-embedded-subscribe-form.validate(action='http://WrenInvestment.us4.list-manage.com/subscribe/post?u=505be1adb429cbb4006efe075&id=5ca74502fd', method='post', name='mc-embedded-subscribe-form')
-							h3 Sign up to be alerted to future presentations
-							.indicates-required
-								span.asterisk *
-								| indicates required
+						form#mc-embedded-subscribe-form.validate(action='//PhilChampagne.us9.list-manage.com/subscribe/post?u=b424ec9730abf5f9c6de3a854&id=ec08bc06e2', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+							h2 Sign up to be alerted to future presentations
 							.mc-field-group
-								label(for='mce-FNAME')
-								| First Name
-								span.asterisk *
-								br
-								br
-								input#mce-FNAME.required(type='text', name='FNAME', value='')
+								label(for='mce-NAME') Name 
+								input#mce-NAME.(type='text', value='', name='NAME')
 							.mc-field-group
-								label(for='mce-EMAIL')
-								| Email Address
-								span.asterisk *
-								br
-								br
-								input#mce-EMAIL.required.email(type='email', name='EMAIL', value='')
+								label(for='mce-EMAIL') Email Address 
+								input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
 							#mce-responses.clear
+								#mce-error-response.response(style='display: none;')
+								#mce-success-response.response(style='display: none;')
+							div(style='position: absolute; left: -5000px;')
+								input(type='text', name='b_b424ec9730abf5f9c6de3a854_ec08bc06e2', tabindex='-1', value='')
 							.clear
-								input#mc-embedded-subscribe.button(type='submit', name='subscribe', value='Subscribe')
+								input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+					script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+					script(type='text/javascript')
+						(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
+					// End mc_embed_signup
 
 
 		//- script(src='/bower_components/zepto/zepto.min.js');

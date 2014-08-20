@@ -1,11 +1,13 @@
 @import "../bower_components/webnext-ui/build/export";
 
 html {
-	height: 100%;
+	// height: 100%;
+	font-size: 1em;
 }
 
 body {
-	height: 100%;
+	font-size: 1em;
+	// height: 100%;
 	background-image: url("../img/bitcoin-code-1280-lite.jpg");
 	background-position: center left;
 	background-size: cover;
@@ -23,12 +25,13 @@ body {
 	h1 {
 		margin: 0;
 		padding: 1.6em 2em;
-		text-shadow: #111 0 0 1em;
+		text-shadow: #111 0 0 2em;
 	}
 }
 
 .pitch {
 	background-color: #fff;
+	box-shadow: #111 0 0.6em 6em;
 
 	.wrapper {
 		// min-height: 30em;
@@ -39,10 +42,12 @@ body {
 }
 
 .email-list {
-	min-height: 10em;
+	min-height: 28em;
+	padding: 4em;
 
 	.wrapper {
-		max-width: 60em;
+		max-width: 50em;
 		margin: 0 auto;
+		box-shadow: #111 0 0.8em 6em;
 	}
 }
