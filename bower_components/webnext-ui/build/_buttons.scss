@@ -1,0 +1,49 @@
+// all buttons
+.b-white, .b-blue, .b-green, .b-red {
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 0.4em;
+	padding: 0.8em;
+	margin: 0.2em;
+	cursor: pointer;
+	text-align: center;
+}
+
+// color only
+.b-blue, .b-green, .b-red {
+	color: #fff;
+}
+
+// white
+.b-white {
+	background-color: #fff;
+	color: #333;
+	border-color: #ccc;
+}
+.b-white:hover {
+	background-color: darken(#fff, 15%);
+}
+
+// blue
+.b-blue {
+	background-color: $colors-b-blue;
+}
+.b-blue:hover {
+	background-color: darken($colors-b-blue, 15%);
+}
+
+// green
+.b-green {
+	background-color: $colors-b-green;
+}
+.b-green:hover {
+	background-color: darken($colors-b-green, 15%);
+}
+
+// red
+.b-red {
+	background-color: $colors-b-red;
+}
+.b-red:hover {
+	background-color: darken($colors-b-red, 15%);
+}
