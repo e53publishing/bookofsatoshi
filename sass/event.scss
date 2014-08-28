@@ -41,6 +41,59 @@ body {
 	}
 }
 
+.meta-wrapper {
+	background-color: #fff;
+	box-shadow: #111 0 0.6em 6em;
+
+	.stream {
+		max-width: 56em;
+		margin: 0 auto;
+		padding: 2em;
+
+		iframe {
+			width: 100%;
+			min-height: 32em;
+			border: none;
+		}
+	}
+}
+
+.meta-wrapper2 {
+	min-height: 28em;
+	padding: 2em 4em 4em;
+
+	.button-wrapper {
+		max-width: 23em;
+		margin: 0 auto;
+		padding: 1em 1em 3em;
+
+		.b-blue {
+			box-shadow: #111 0 0.8em 6em;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.chat {
+		max-width: 56em;
+		margin: 0 auto;
+		// padding: 1em 3em 3em;
+		box-shadow: #111 0 0.8em 6em;
+		background-color: #fff;
+
+		iframe {
+			width: 100%;
+			min-height: 30em;
+			border: none;
+			padding: none;
+			background-color: #fff;
+		}
+	}
+}
+
 .email-list {
 	min-height: 28em;
 	padding: 4em;
@@ -49,5 +102,18 @@ body {
 		max-width: 50em;
 		margin: 0 auto;
 		box-shadow: #111 0 0.8em 6em;
+	}
+}
+
+.email-list.live {
+	min-height: 28em;
+	padding: 4em 4em 2em;
+	background-color: #fff;
+	box-shadow: #111 0 0.6em 6em;
+
+	.wrapper {
+		max-width: 50em;
+		margin: 0 auto;
+		box-shadow: none;
 	}
 }

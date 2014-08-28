@@ -20,7 +20,7 @@ html(lang='en')
 			.header.t-formal
 				.wrapper
 					h1.t-align-center A Sidechain implementation without Bitcoin protocol modification
-			section.pitch
+			//- section.pitch
 				.wrapper
 					p 
 						strong When: Thursday, August 28nd 2014 at 8 PM 
@@ -45,11 +45,17 @@ html(lang='en')
 
 					p Hope to see you there!
 
-			//- section.stream
-			//- 	//- 
-			//- section.chat
-			//- 	//- 
-			section.email-list
+			.meta-wrapper
+				section.stream
+					iframe(src='//www.youtube-nocookie.com/embed/bEVrzGuz0wI?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+
+			.meta-wrapper2
+				.button-wrapper
+						a(href="https://webchat.freenode.net/?channels=%23philchampagne&uio=MT1mYWxzZSY5PXRydWU13", target="_blank").t-align-center.b-blue Fullsized Chat (Opens new tab/window)
+				section.chat
+					iframe(src='http://webchat.freenode.net?channels=%23philchampagne&uio=MT1mYWxzZSY5PXRydWU13')
+
+			section.email-list.live
 				.wrapper
 					// 
 						Begin MailChimp Signup Form 
@@ -77,6 +83,11 @@ html(lang='en')
 						(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
 					// 
 						End mc_embed_signup
+
+				| &nbsp;
+				p.t-align-center Copyright 
+					span.t-formal &copy; 
+					|2014 e53 Publishing LLC
 
 
 		//- script(src='/bower_components/zepto/zepto.min.js');
