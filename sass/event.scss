@@ -95,8 +95,8 @@ body {
 }
 
 .email-list {
-	min-height: 28em;
-	padding: 4em;
+	min-height: 20em;
+	padding: 4em 4em 1em;
 
 	.wrapper {
 		max-width: 50em;
@@ -116,4 +116,9 @@ body {
 		margin: 0 auto;
 		box-shadow: none;
 	}
+}
+
+footer {
+	color: #fff;
+	padding: 2.5em;
 }
