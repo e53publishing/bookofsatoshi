@@ -52,7 +52,7 @@ a.unl, a.unl:link, a.unl:visited, a.unl:hover, a.unl:active {
 	box-shadow: 5px 5px 50px #222;
 }
 header {
-	height: 16em;
+	min-height: 16em;
 	background-image: url("../img/cover-img-1280-lite-2.jpg");
 	background-size: cover;
 	background-position: center;
@@ -193,6 +193,18 @@ img.coffee-softcover.home {
 	border-bottom: 1px #ddd solid;
 	padding-bottom: 0.2em;
 }
+
+.media-item {
+	display: block;
+	margin: 1em auto;
+	width: 30em;
+	height: 16em;
+}
+
+.img-grid-text {
+	padding: 0.5em;
+}
+
 @media only screen and (min-width: 25em) {
 	header h1 {
 		margin-top: 1.2em;

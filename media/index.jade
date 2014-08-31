@@ -1,0 +1,187 @@
+extends ../jade/template
+
+block head
+	+title()
+	+description()
+
+block main
+	section
+		nav
+			p
+				a(href="../").unl.blue Home
+				|  &nbsp; 
+				a(href="../about/").unl.blue About
+				|  &nbsp; 
+				a(href="../contact/").unl.blue Contact Us
+				|  &nbsp; 
+				a(href="http://bookofsatoshi.blogspot.com/").unl.blue Blog
+				|  &nbsp; 
+				a(href="#").unl.active Media
+				|  &nbsp; 
+				a(href="../event/sidechain/").unl.blue Event
+				|  &nbsp; 
+				a(href="../extra/").unl.blue Extra
+				|  &nbsp; 
+				a(href="../index/").unl.blue Book Link Index
+	hr
+	h1.text-center Media
+	section
+		h3 News &amp; Blogs
+		ul
+			li
+				a(href="http://dollarvigilante.com/blog/2014/6/16/the-book-of-satoshi-bitcoin-has-changed-everything.html") The Dollar Vigilante Blog - The Book Of Satoshi: Bitcoin Has Changed Everything
+			li
+				a(href="http://letstalkbitcoin.com/blog/post/rise-of-the-zombie-bitcoins") Let's Talk Bitcoin - Rise of the Zombie Bitcoins 
+				ul
+					li The Section "The Sleeping Dragon Hoard", "Here is a phenomenal book which contains the complete collected writings of everything Satoshi ever posted about bitcoin."
+			li
+				a(href="http://insidebitcoins.com/the-book-of-satoshi-the-collected-writings-of-the-inventor-of-bitcoin/") Inside Bitcoins - The Book of Satoshi: The Collected Writings of the Inventor of Bitcoin
+			li
+				a(href="//www.youtube.com/watch?v=2gS7pVzf41U") Theo Goodman - Book of Satoshi / interview with Phil Champagne at Cryptolina
+		iframe.media-item(src='//www.youtube-nocookie.com/embed/2gS7pVzf41U?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+
+		| &nbsp;
+		hr
+		h3 Social Media
+		blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				a(href='https://twitter.com/egg_descrambler') @egg_descrambler
+				| Thanks for the follow. I'm a proud owner of your book. An excellent collection of Satoshi's writings
+				a(href='http://t.co/qiIcAqt5er') pic.twitter.com/qiIcAqt5er
+			| — bitcoin mom (@bitcoinmom)
+			a(href='https://twitter.com/bitcoinmom/statuses/502964183265472512') August 22, 2014
+
+		blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				| Reading
+				a(href='https://twitter.com/bookofsatoshi') @bookofsatoshi
+				| I bought for
+				a(href='https://twitter.com/AmazonKindle') @AmazonKindle
+				| . Only $3.99 or 0.0078
+				a(href='https://twitter.com/hashtag/BTC?src=hash') #BTC
+				| at this time.
+				a(href='https://twitter.com/hashtag/bitcoin?src=hash') #bitcoin
+				a(href='https://twitter.com/hashtag/SatoshiNakamoto?src=hash') #SatoshiNakamoto
+				a(href='http://t.co/pCup0nUTqc') pic.twitter.com/pCup0nUTqc
+			| — Hattori Hanzō (@Oni_no_Hanzo)
+			a(href='https://twitter.com/Oni_no_Hanzo/statuses/500708948052168704') August 16, 2014
+
+		blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				| Bought my signed copy with bitcoin. Great job, Phil!
+				a(href='http://t.co/NtjQ1fizOY') http://t.co/NtjQ1fizOY
+				a(href='http://t.co/qptMgRhEhO') pic.twitter.com/qptMgRhEhO
+			| — Jameson Lopp (@lopp)
+			a(href='https://twitter.com/lopp/statuses/483963894163972096') July 1, 2014
+
+		//- blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				| With
+				a(href='https://twitter.com/MadBitcoins') @MadBitcoins
+				| in Washington DC for the
+				a(href='https://twitter.com/hashtag/Bitcoin?src=hash') #Bitcoin
+				| in the Beltway conference. I can confirm: great hat!
+				a(href='http://t.co/sVL10m44u0') pic.twitter.com/sVL10m44u0
+			| — Book Of Satoshi (@bookofsatoshi)
+			a(href='https://twitter.com/bookofsatoshi/statuses/480895228270751744') June 23, 2014
+
+		//- blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				| At
+				a(href='https://twitter.com/hashtag/Bitcoin?src=hash') #Bitcoin
+				| DC with smart
+				a(href='https://twitter.com/hashtag/Krypto?src=hash') #Krypto
+				| dog of
+				a(href='https://twitter.com/hashtag/SeansOutpost?src=hash') #SeansOutpost
+				a(href='https://twitter.com/SeansOutpost') @SeansOutpost
+				| Non-profit in FL. They accept Bitcoin!
+				a(href='http://t.co/ucq2zLu7NE') pic.twitter.com/ucq2zLu7NE
+			| — Phil Champagne (@egg_descrambler)
+			a(href='https://twitter.com/egg_descrambler/statuses/480884798458961920') June 23, 2014
+
+		//- blockquote.twitter-tweet(data-cards='hidden', lang='en')
+			p
+				| With
+				a(href='https://twitter.com/Run2Gold') @Run2Gold
+				| and
+				a(href='https://twitter.com/NewsGoldSilver') @NewsGoldSilver
+				| at
+				a(href='https://twitter.com/hashtag/Bitcoin?src=hash') #Bitcoin
+				| Beltway in Washington DC
+				a(href='http://t.co/nNAL5ivpqE') pic.twitter.com/nNAL5ivpqE
+			| — Phil Champagne (@egg_descrambler)
+			a(href='https://twitter.com/egg_descrambler/statuses/480893537869758464') June 23, 2014
+
+		script(async='async', src='//platform.twitter.com/widgets.js', charset='utf-8')
+
+		| &nbsp;
+		hr
+		h3 Conferences &amp; Events
+		h4 
+			a(href="http://cryptolina.com/") Cryptolina 2014
+		.row
+			.col-md-4
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140815_202326.jpeg")
+					.img-grid-text Phil Champagne &amp; Marie Gagnon standing in front of a Book of Satoshi poster
+			.col-md-4
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140816_101404.jpeg")
+					.img-grid-text Phil Champagne signing a copy of The Book of Satoshi
+			.col-md-4
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/10610794_10152432370259580_593599800516462715_n.jpg")
+					.img-grid-text Phil Champagne &amp; Marie Gagnon with 
+						a(href="https://twitter.com/BitcoinBelle") Michele Seven (Bitcoin Belle)
+						| , 
+						a(href="https://twitter.com/materionaut") Sam Onat Yilmaz
+						| , 
+						a(href="http://merchantcoin.net/") Kirk St. Johns, and Zackary Lark
+		| &nbsp;
+		.row
+			.col-md-4
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140816_142451.jpeg")
+					.img-grid-text Phil Champagne preparing for an interview
+			.col-md-6
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140816_191045.jpeg")
+					.img-grid-text Phil Champagne enjoying dinner with 
+						a(href="https://twitter.com/ribbitsean") Sean Dennis 
+						| &amp; 
+						a(href="https://twitter.com/gregorylsimon") Gregory Simon
+
+		| &nbsp;
+		h4 
+			a(href="http://www.bitcoinbeltway.com/") Bitcoin Beltway 2014
+		.row
+			.col-md-6
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140621_110753.jpeg")
+					.img-grid-text Phil Champagne with 
+						a(href="http://dollarvigilante.com/") Jeff Berwick
+						| , who wrote the forward for The Book of Satoshi
+			.col-md-6
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140621_110956.jpeg")
+					.img-grid-text Phil Champagne with 
+						a(href="https://twitter.com/TraceMayer") Trace Mayer 
+						| (right) &amp; 
+						a(href="https://twitter.com/NewsGoldSilver") Mike Maloney 
+						| (center)
+		| &nbsp;
+		.row
+			.col-md-6
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140621_111344.jpeg")
+					.img-grid-text Phil Champagne with 
+						a(href="https://twitter.com/madbitcoins/") Mad Bitcoins
+			.col-md-6
+				.thumbnail.img-thumbnail
+					img.img-responsive(src="../img/20140622_130436.jpeg")
+					.img-grid-text Krypto the dog from 
+						a(href="https://twitter.com/SeansOutpost") Sean's Outpost 
+						
+
+	| &nbsp;
+	| &nbsp;
