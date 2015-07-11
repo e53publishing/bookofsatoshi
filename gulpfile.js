@@ -5,13 +5,13 @@ var gulp = require('gulp'), // require gulp (duh)
 	plg = gulpLoadPlugins(); // plugins are now useable via the plg object (e.g. plg.concat)
 
 // Build
-	gulp.task('styles:hintcss', function() {
-		// move hint.css from bower_components & rename
-		return gulp.src(['./bower_components/hint.css/hint.min.css'])
-			.pipe(plg.plumber())
-			.pipe(plg.concat('hint.css'))
-			.pipe(gulp.dest('./styles/e/'));
-	});
+	// gulp.task('styles:hintcss', function() {
+	// 	// move hint.css from bower_components & rename
+	// 	return gulp.src(['./bower_components/hint.css/hint.min.css'])
+	// 		.pipe(plg.plumber())
+	// 		.pipe(plg.concat('hint.css'))
+	// 		.pipe(gulp.dest('./styles/e/'));
+	// });
 
 	gulp.task('styles:lib', function() {
 		// Libraries
