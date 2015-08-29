@@ -135,7 +135,7 @@ var gulp = require('gulp'), // require gulp (duh)
 			logPrefix: 'BrowserSync',
 			reloadDelay: 2000,
 			tunnel: false,
-			open: 'external'
+			open: false
 		});
 	});
 
@@ -146,7 +146,7 @@ var gulp = require('gulp'), // require gulp (duh)
 	});
 
 // run all tasks minus watch & serve
-	gulp.task('full', ['styles:hintcss', 'styles:lib', 'styles', 'scripts:html5shiv', 'scripts:lib', 'scripts']);
+	gulp.task('full', [ 'styles:lib', 'styles', 'scripts:html5shiv', 'scripts:lib', 'scripts']);
 // alias of 'full'
 	gulp.task('init', ['full']);
 

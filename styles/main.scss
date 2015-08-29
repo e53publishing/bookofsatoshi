@@ -7,7 +7,7 @@ body {
 	// height: 100%;
 	/* ↓ Sets font size to 16 px if browser font size is 16px & 14 px if browser font size is 14 px */
 	/* This gives you base 10 rems & ems that behave as normal */
-	font-size: 1.6em;
+	font-size: 1.4em;
 	padding: 1em;
 	background-image: url("../../img/book__cover__image--bitcoin-code.jpg");
 	background-attachment: fixed;
@@ -206,6 +206,11 @@ img.coffee-softcover.home {
 
 .img-grid-text {
 	padding: 0.5em;
+}
+
+.book-style-quote {
+	// font-size: 1em;
+	font-weight: bolder;
 }
 
 @media only screen and (min-width: 25em) {
